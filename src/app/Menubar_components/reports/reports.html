@@ -1,0 +1,27 @@
+<h1>{{title1}}</h1>
+<table>
+    <thead>
+        <tr>
+            <th>S.No.</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Mobile</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- <tr *ngFor="let res of apidata">
+            <td>{{res.id}}</td>
+            <td>{{res.name}}</td>
+             <td>{{res.age}}</td>
+            <td>{{res.mobile}}</td>
+        </tr> -->
+
+<tr *ngFor="let res of apidata, let i=index">
+            <td>{{i+1}}</td>
+            <td>{{res.name}}</td>
+             <td>{{res.age}}</td>
+            <td>{{res.mobile}}</td>
+        </tr>
+
+    </tbody>
+</table>>

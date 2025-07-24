@@ -1,0 +1,61 @@
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6 mb-4 mb-md-0">
+      <div class="card shadow-sm h-100">
+        <div class="card-body p-4">
+          <h1 class="card-title text-center mb-4">{{reactform | titlecase }}</h1>
+          <h1 class="card-title text-center mb-4">{{mybob | date:'MMM dd, yyyy' }}</h1>
+          <!-- <div [innerHTML]="bankData"></div> -->
+
+          <h1>{{crdate | date:'dd/MM/yyyy HH:mm:ss'}}</h1>
+
+          <h1>{{newdata}}</h1>
+
+          <form [formGroup]="rect_form" (ngSubmit)="getuserData()">
+            <div class="mb-3">
+              <label for="f_name" class="form-label">First Name</label>
+              <input type="text" formControlName="f_name"  required class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="s_name" class="form-label">Second Name</label>
+              <input type="text" id="s_name" formControlName="s_name" ngModel required class="form-control" placeholder="e.g., Doe" >
+            </div>
+            <div class="mb-3">
+              <label for="age" class="form-label">Age</label>
+              <input type="number" id="age" formControlName="age" ngModel required class="form-control" placeholder="e.g., 30">
+            </div>
+            <div class="mb-3">
+              <label for="loca" class="form-label">Location</label>
+              <input type="text" id="loca" formControlName="loca" ngModel required class="form-control" placeholder="e.g., New York">
+            </div>
+            <div class="mb-4">
+              <label for="mobile" class="form-label">Mobile</label>
+              <input type="tel" id="mobile" formControlName="mobile" ngModel required class="form-control" placeholder="e.g., 123-456-7890">
+            </div>
+
+    
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card shadow-sm h-100">
+        <div class="card-body p-4">
+          <h1 class="card-title text-center mb-4">User Details:</h1>
+          <div class="text-secondary">
+            <h2 class="fs-5 mb-3">First Name: <span class="fw-normal text-dark">{{fname || 'N/A'}}</span></h2>
+            <h2 class="fs-5 mb-3">Second Name: <span class="fw-normal text-dark">{{sname || 'N/A'}}</span></h2>
+            <h2 class="fs-5 mb-3">Your Age: <span class="fw-normal text-dark">{{age || 'N/A'}}</span></h2>
+            <h2 class="fs-5 mb-3">Your Location: <span class="fw-normal text-dark">{{address || 'N/A'}}</span></h2>
+            <h2 class="fs-5 mb-3">Contact: <span class="fw-normal text-dark">{{mobile || 'N/A'}}</span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

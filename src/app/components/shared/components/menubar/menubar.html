@@ -1,0 +1,72 @@
+
+<nav class="navbar navbar-expand-lg" style="background-color: #8A784E;" data-bs-theme="light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav nav-pills justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link"  aria-current="page" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/" style="color: #FFFFFF;">Dashboard</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" style="color:#FFFFFF">Season</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/spring-report">Spring Report</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" routerLink="/summer-report">Summer Report</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" routerLink="/summer-report">Winter Report</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="color:#FFFFFF">Reports</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/orignal">Original MTPs</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" routerLink="/additional">Additional MTPs</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="color:#FFFFFF">Help</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+            <li><a class="dropdown-item" href="#">Feedback Form</a></li>
+            <li><a class="dropdown-item" href="#">Feedback Report</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="color:#FFFFFF">Accessibility</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/wpms" style="color:#FFFFFF">W P M S</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/login" style="color:#FFFFFF">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/driven_form" style="color:#FFFFFF">Template driven form</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/reactive-form" style="color:#FFFFFF">Reactive form</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

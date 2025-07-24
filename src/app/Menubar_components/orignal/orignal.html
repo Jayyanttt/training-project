@@ -1,0 +1,48 @@
+<!-- <h1>{{childsofdata? 'childdata='+childsofdata:''}}</h1> -->
+<!-- <div class="row">
+    <div class="col-lg-12">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>S. No</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let res of ser_data">
+                    <td>{{res.id}}</td>
+                    <td>{{res.name}}</td>
+                    <td>{{res.address}}</td>
+                    <td>{{res.contact}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> -->
+<h1 class="text-center text-decoration-underline">Orignal MTPs</h1>
+<div class="row">
+    <div class="col-lg-12">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>S. No</th>
+                    <th>State Name</th>
+                    <th>Estimate Qty.</th>
+                    <th>Procurement Qty.</th>
+                    <th>Region</th>
+                     </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let res of serviceData">
+                    <td>{{res.id}}</td>
+                    <td>{{res.lgd_state_name_en}}</td>
+                    <td>{{res.estimate_procurement_lmt}}</td>
+                    <td>{{res.quantity_procured_6}}</td>
+                    <td>{{res.up_region}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
